@@ -1,10 +1,19 @@
 package Exercícios_Heranca_Polimorfismo;
 
-public class Animal {
+public abstract class Animal {
 
 	protected String nome;
 	protected int idade;
-	protected boolean som;
+	
+	/*
+	public Animal(String nome, int idade) {
+		this.nome = nome;
+		this.idade = idade;
+	}*/
+	
+	public void emitirSom() {
+		System.out.println("Som genérico! ");
+	}
 	
 	public String getNome() {
 		return nome;
@@ -18,13 +27,4 @@ public class Animal {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	public boolean isSom() {
-		return som;
-	}
-	public void setSom(boolean som) {
-		this.som = som;
-	}
-	
-
-
 }
